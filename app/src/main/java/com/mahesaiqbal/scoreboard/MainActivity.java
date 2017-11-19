@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         Lalu hasilnya disimpan kedalam variabel
         */
         scoreTeamB = scoreTeamB + 3;
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
     public void addTwoForTeamB(View view) {
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         Lalu hasilnya disimpan kedalam variabel
         */
         scoreTeamB = scoreTeamB + 2;
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
     public void addOneForTeamB(View view) {
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         Lalu hasilnya disimpan kedalam variabel
         */
         scoreTeamB = scoreTeamB + 1;
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
     public void displayForTeamA(int score) {
@@ -95,5 +95,13 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamB(int score) {
         TextView scoreViewB = (TextView) findViewById(R.id.team_b_score);
         scoreViewB.setText(String.valueOf(score));
+    }
+
+    //M
+    public void resetScore(View view) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 }

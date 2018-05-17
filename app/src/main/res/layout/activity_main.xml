@@ -20,13 +20,17 @@
                 android:layout_height="wrap_content"
                 android:text="Team A"
                 android:padding="4dp"
+                android:textSize="30sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
                 android:gravity="center_horizontal"/>
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:padding="4dp"
+                android:layout_margin="16dp"
+                android:textSize="40sp"
                 android:gravity="center_horizontal"/>
             <Button
                 android:layout_width="match_parent"
@@ -67,13 +71,17 @@
                 android:layout_height="wrap_content"
                 android:text="Team B"
                 android:padding="4dp"
+                android:textSize="30sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
                 android:gravity="center_horizontal"/>
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:padding="4dp"
+                android:layout_margin="16dp"
+                android:textSize="40sp"
                 android:gravity="center_horizontal"/>
             <Button
                 android:layout_width="match_parent"
@@ -103,13 +111,19 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/reset_score"
+    <RelativeLayout
+        android:id="@+id/button_reset"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Reset"
-        android:textColor="@android:color/white"
-        android:background="@color/colorPrimary"
-        android:onClick="resetScore" />
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/reset_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:onClick="resetScore"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 
 </LinearLayout>

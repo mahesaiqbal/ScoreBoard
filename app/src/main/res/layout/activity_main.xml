@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -119,7 +121,7 @@
             android:id="@+id/reset_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reset"
+            android:text="Reset Score"
             android:textColor="@android:color/white"
             android:background="@color/colorPrimary"
             android:onClick="resetScore"
